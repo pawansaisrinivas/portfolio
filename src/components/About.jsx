@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import profileImg from '../assets/IMG_6954(1).JPG';
 
 const About = () => {
   return (
@@ -20,13 +21,9 @@ const About = () => {
           >
             <div className="w-80 h-80 mx-auto glassmorphism rounded-3xl overflow-hidden animate-float shadow-2xl">
               <img 
-                src="/profile.jpg" 
+                src={profileImg} 
                 alt="Pawan Sai Srinivas Panigrahi" 
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-9xl font-bold text-white">PS</div>';
-                }}
               />
             </div>
           </motion.div>
